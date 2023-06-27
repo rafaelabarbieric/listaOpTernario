@@ -9,10 +9,23 @@
     
     //Entrada
 
+    const preco = Number(prompt(`Informe o preço do produto:`).trim().replace(",","."));
 
     //Processamento
+
+    const preco280 = (preco * 0.20) + preco;
+    const preco700 = (preco * 0.15) + preco;
+    const preco1500 = (preco * 0.10) + preco;
+    const preco1501 = (preco * 0.05) + preco;
+
+    (preco <= 280)?  alert (`O preço do produto será R$ ${preco280.toFixed(2).replace(".",",")}.`)
+    : (preco > 280 && preco <= 700)? alert(`O preço do produto será R$ ${preco700.toFixed(2).replace(".",",")}.`)
+    : (preco > 700 && preco <= 1500)? alert(`O preço do produto será R$ ${preco1500.toFixed(2).replace(".",",")}.`)
+    : alert (`O preço será R$ ${preco1501.toFixed(2).replace(".",",")}.`)
 
     
     //Saída
 
-</script>
+    
+
+</script> 
