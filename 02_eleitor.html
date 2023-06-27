@@ -5,11 +5,11 @@
 
     //Entrada
 
-    const idade = Number(prompt(`Informe sua idade:`).trim().replace(",","."));
+    const ano = Number(prompt(`Informe seu ano de nascimento:`).trim().replace(",","."));
 
     //Processamento
 
-    (idade >= 16)? alert(`Você pode votar!`)
+    (new Date().getFullYear - ano >= 16)? alert(`Você pode votar!`)
     : alert(`Você ainda não pode votar!`)
 
     //Saída
