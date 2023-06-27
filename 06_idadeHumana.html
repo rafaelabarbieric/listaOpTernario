@@ -9,10 +9,21 @@
 
     //Entrada
 
+    const idade = Number(prompt(`Qual a idade de seu cão?`));
+    const porte = prompt(`Qual o porte de seu cão? Responda com P-pequeno ou M-médio ou G-grande.`).toLowerCase();
 
     //Processamento
 
-    
+    const idadeHumana = idade*5;
+    const idadeHumana2 = idade*6;
+    const idadeHumana3 = idade*7;
+
+   
+    (porte === 'p')? alert (`A idade humana de seu cão é ${idadeHumana}.`)
+    :(porte === 'm')? alert (`A idade humana de seu cão é ${idadeHumana2}.`)
+    : alert (`A idade humana de seu cão é ${idadeHumana3}.`)
+
     //Saída
+  
 
 </script>
