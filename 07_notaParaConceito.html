@@ -11,8 +11,16 @@
 
     //Entrada
 
+    const nota = Number(prompt(`Informe sua nota:`).replace(",","."));
+
 
     //Processamento
+
+    (nota >= 9 && nota <= 10 )? alert(`Sua nota equivale a A.`)
+    :(nota >= 8 && nota<9)? alert(`Sua nota equivale a B.`)
+    :(nota >= 7 && nota < 8)? alert(`Sua nota equivale a C.`)
+    :(nota >= 6 && nota < 7)? alert(`Sua nota equivale a D.`)
+    : alert(`Sua nota equivale a E.`)
 
     
     //Saída
