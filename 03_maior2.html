@@ -5,10 +5,15 @@
 
     //Entrada
 
-    
+    const numero1 = Number(prompt(`Informe um número:`).trim().replace(",","."));
+    const numero2 = Number(prompt(`Informe outro número:`).trim().replace(",","."));
+
     //Processamento
 
-    
+    (numero1 > numero2)? alert(`O número ${numero1} é o maior!`)
+    : (numero1 === numero2)? alert(`Os números são iguais!`)
+    : alert(`O número ${numero2} é o maior!`)
+
     //Saída
     
 </script>
