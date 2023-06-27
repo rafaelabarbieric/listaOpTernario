@@ -9,9 +9,18 @@
 
     //Entrada
 
+    const quantidadeHoras = Number(prompt(`Informe a quantidade de horas trabalhada semanalmente:`).trim().replace(",","."));
+    const precoHora = Number(prompt(`Informe quanto recebe por hora:`).trim().replace(",","."));
 
     //Processamento
 
+    const salario = (quantidadeHoras * precoHora);
+    const adicinal20 = (salario * 0.20) + salario;
+    const adicional30 = (salario * 0.30) + salario;
+    
+    (quantidadeHoras <= 45)? alert(`O valor do seu salário será R$ ${salario.toFixed(2).replace(".",",")}.`)
+    :(quantidadeHoras > 45 && quantidadeHoras <= 60)? alert(`O valor do salário será R$ ${adicinal20.toFixed(2).replace(".",",")}.`)
+    : alert(`O vvalor so seu salário será R$ ${adicional30.toFixed(2).replace(".",".")}.`)
     
     //Saída
 
