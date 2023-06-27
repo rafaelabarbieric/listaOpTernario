@@ -13,9 +13,10 @@
 
     //Processamento
 
-    const totalPreco = (precoCombustivel * quantidadeLitros)
+    const totalPreco = (precoCombustivel * quantidadeLitros);
+    const totaltransporte = (precoTransporte * 2);
 
-    (precoTransporte < totalPreco)? alert(`O meio de transporte mais barato é Transporte público, sendo o preço R$ ${precoTransporte.toFixed(2).replace(".",",")}.`)
+    (precoTransporte < totalPreco)? alert(`O meio de transporte mais barato é Transporte público, sendo o preço R$ ${totaltransporte.toFixed(2).replace(".",",")}.`)
     : (precoTransporte === totalPreco)? alert(`O dois meios de transporte tem o mesmo preço, sendo R$ ${precoTransporte.toFixed(2).replace(".",",")}.`)
     : alert(`O meio de transporte mais barato é o seu veículo, sendo R$ ${totalPreco.toFixed(2).replace(".",",")}`)
     
