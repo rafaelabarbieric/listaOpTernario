@@ -11,10 +11,21 @@
 
     //Entrada
 
+    const agua = Number(prompt(`Informe o valor da sua conta de água:`).trim().replace(",","."));
+    const eletricidade = Number(prompt(`Informe o valor da sua conta de energia elétrica:`).trim().replace(",","."));
+    const telefone = Number(prompt(`Informe o valor da sua conta de telefone:`));
+    const supermercado = Number(prompt(`Informe o valor da sua conta de supermercado:`).trim().replace(",","."));
+    const salario = Number(prompt(`Informe o seu salário:`).trim().replace(",","."));
 
     //Processamento
 
-    
+    const valorASerPago = (((agua + eletricidade) + telefone) + supermercado);
+    const sobra = salario - valorASerPago;
+    const falta = valorASerPago - salario;
+
     //Saída
+
+    (salario >= valorASerPago)? alert(`Sobrou do seu salário R$ ${sobra.toFixed(2).replace(".",",")} reais.`)
+    : alert(`Faltou para pagar as suas contas R$ ${falta.toFixed(2).replace(".",",")} reais.`)
     
 </script>
