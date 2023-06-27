@@ -7,11 +7,20 @@
 
     //Entrada
 
+    const precoCombustivel = Number(prompt(`Informe o preço do litro do combustível:`).trim().replace(",","."));
+    const quantidadeLitros = Number(prompt(`Informe a quantidade de litros de combustível que você usa para se locomover até o trabalho:`).trim().replace(",","."));
+    const precoTransporte = Number(prompt(`Informe o preço do transporte público que deverá pegar para se locomver até o trabalho:`).trim().replace(",","."));
 
     //Processamento
 
+    const totalPreco = (precoCombustivel * quantidadeLitros)
+
+    (precoTransporte < totalPreco)? alert(`O meio de transporte mais barato é Transporte público, sendo o preço R$ ${precoTransporte.toFixed(2).replace(".",",")}.`)
+    : (precoTransporte === totalPreco)? alert(`O dois meios de transporte tem o mesmo preço, sendo R$ ${precoTransporte.toFixed(2).replace(".",",")}.`)
+    : alert(`O meio de transporte mais barato é o seu veículo, sendo R$ ${totalPreco.toFixed(2).replace(".",",")}`)
     
     //Saída
 
+    
     
 </script>
