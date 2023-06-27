@@ -25,7 +25,8 @@
 
     //Saída
 
-    (salario >= valorASerPago)? alert(`Sobrou do seu salário R$ ${sobra.toFixed(2).replace(".",",")} reais.`)
-    : alert(`Faltou para pagar as suas contas R$ ${falta.toFixed(2).replace(".",",")} reais.`)
+    (salario > valorASerPago)? alert(`Você pagou a suas contas e sobrou do seu salário R$ ${sobra.toFixed(2).replace(".",",")} reais.`)
+    :(salario < valorASerPago)? alert(`Faltou para pagar as suas contas R$ ${falta.toFixed(2).replace(".",",")} reais.`)
+    : alert(`Você pagou as suas contas e não sobrou nada.`)
     
 </script>
